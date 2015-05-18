@@ -1,14 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package sstdodgeballstats;
 
 
 /**
  *
- * @author 416286
+ * @author NathanOtt
  */
 public class Player 
 {
@@ -39,6 +34,15 @@ public class Player
         myName = name;
         myProfile = profile;
         myPlayerBio = bio;
+    }
+    
+    /**
+     * Accessor method for myName 
+     * @return The player's name
+     */
+    public String getName()
+    {
+        return myName;
     }
     
     /**
@@ -103,5 +107,63 @@ public class Player
     {
         return this.getPoints() - p.getPoints(); 
     }
+    
+    /**
+     * Increments throws
+     */
+    public void incThrows()
+    {
+       myThrows++;
+    }
+    
+    /**
+     * Increments hits
+     */
+    public void incHits()
+    {
+        myHits++;
+    }
+    
+    /**
+     * Increments catches
+     */
+    public void incCatches()
+    {
+        myCatches++;
+    }
+    
+    /**
+     * Increments hit outs
+     */
+    public void incHitOuts()
+    {
+        myHitOuts++;
+    }
+    
+    /**
+     * Increments caught outs
+     */
+    public void incCaughtOuts()
+    {
+        myCaughtOuts++;
+    }
+    
+    /**
+     * Increments games played
+     */
+    public void incGames()
+    {
+        myGames++;
+    }
+    
+    /**
+     * Increments survival bonuses
+     */
+    public void incSurvivalBonus()
+    {
+        survivalBonus++;
+    }
+    
+    
     
 }
